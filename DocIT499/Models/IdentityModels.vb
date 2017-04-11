@@ -24,4 +24,6 @@ Public Class ApplicationDbContext
     Public Shared Function Create() As ApplicationDbContext
         Return New ApplicationDbContext()
     End Function
+
+    Public Property Customers As System.Data.Entity.DbSet(Of Customer)
 End Class

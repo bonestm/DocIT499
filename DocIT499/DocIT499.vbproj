@@ -219,11 +219,32 @@
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="App_Start\Startup.Auth.vb" />
     <Compile Include="Controllers\AccountController.vb" />
+    <Compile Include="Controllers\CustomersController.vb" />
     <Compile Include="Controllers\ManageController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704110239110_InitialCreate.Designer.vb">
+      <DependentUpon>201704110239110_InitialCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704110239110_InitialCreate.vb" />
+    <Compile Include="Migrations\201704110431099_First.Designer.vb">
+      <DependentUpon>201704110431099_First.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704110431099_First.vb" />
+    <Compile Include="Migrations\201704110507289_CommentedCustNoteID.Designer.vb">
+      <DependentUpon>201704110507289_CommentedCustNoteID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704110507289_CommentedCustNoteID.vb" />
+    <Compile Include="Migrations\201704110510322_201704110239110_InitialCreate.Designer.vb">
+      <DependentUpon>201704110510322_201704110239110_InitialCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704110510322_201704110239110_InitialCreate.vb" />
+    <Compile Include="Migrations\Configuration.vb" />
     <Compile Include="Models\AccountViewModels.vb" />
+    <Compile Include="Models\Address.vb" />
+    <Compile Include="Models\Customer.vb" />
+    <Compile Include="Models\CustomerNotes.vb" />
     <Compile Include="Models\IdentityModels.vb" />
     <Compile Include="Models\ManageViewModels.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -245,6 +266,18 @@
     <Compile Include="Startup.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\201704110239110_InitialCreate.resx">
+      <DependentUpon>201704110239110_InitialCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704110431099_First.resx">
+      <DependentUpon>201704110431099_First.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704110507289_CommentedCustNoteID.resx">
+      <DependentUpon>201704110507289_CommentedCustNoteID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704110510322_201704110239110_InitialCreate.resx">
+      <DependentUpon>201704110510322_201704110239110_InitialCreate.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -296,6 +329,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.vbhtml" />
     <Content Include="Views\Shared\Lockout.vbhtml" />
     <Content Include="Views\Shared\_LoginPartial.vbhtml" />
+    <Content Include="Views\Customers\Create.vbhtml" />
+    <Content Include="Views\Customers\Delete.vbhtml" />
+    <Content Include="Views\Customers\Details.vbhtml" />
+    <Content Include="Views\Customers\Edit.vbhtml" />
+    <Content Include="Views\Customers\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
